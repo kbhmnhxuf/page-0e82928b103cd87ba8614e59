@@ -1,0 +1,436 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>泡芙云 | 安全自由的网络伴侣</title><meta name="description" content="泡芙云提供多种流量套餐，让您安全畅享网络自由。基础版¥15/月起，旗舰版专属游戏加速，团队版企业定制一路畅行！"><meta name="keywords" content="泡芙云, 网络服务, 流量套餐, 安全加速"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-b8a69ed323.wecareschool.cn/"><meta property="og:type" content="website"><meta property="og:title" content="泡芙云 | 安全自由的网络伴侣"><meta property="og:description" content="泡芙云提供多种流量套餐，让您安全畅享网络自由。基础版¥15/月起，旗舰版专属游戏加速，团队版企业定制一路畅行！"><meta property="og:url" content="https://p-b8a69ed323.wecareschool.cn/"><meta property="og:site_name" content="泡芙云"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-b8a69ed323.wecareschool.cn/", "name": "泡芙云 | 安全自由的网络伴侣", "description": "泡芙云提供多种流量套餐，让您安全畅享网络自由。基础版¥15/月起，旗舰版专属游戏加速，团队版企业定制一路畅行！", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="0e82928b103cd87ba8614e59:3000ede5a3171feb95d9ae6afb2840cd1417634119bc95a5985df4e9d02f5552:60aff837a50c2db6962a"></head><body id="top"><style>
+        :root {
+            --gray: #f0f0f0;
+            --purple: #9B4DFF;
+            --dark: #333;
+            --light: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--gray);
+            color: var(--dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 260px;
+            height: 100vh;
+            background: #ffffff;
+            border-right: 3px solid var(--purple);
+            padding: 40px 20px;
+            z-index: 100;
+            overflow-y: auto;
+            transition: all 0.3s ease;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav a {
+            display: block;
+            padding: 14px 20px;
+            color: var(--dark);
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: #f8f8f8;
+            padding-left: 30px;
+        }
+        main {
+            margin-left: 260px;
+            padding-top: 20px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                transform: translateX(-100%);
+                transition: transform 0.4s ease;
+            }
+            nav.open {
+                transform: translateX(0);
+            }
+            main {
+                margin-left: 0;
+            }
+        }
+        .hamburger {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 200;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+        }
+        .hero {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(180deg, #f0f0f0 0%, #9B4DFF 50%, #e0e0e0 100%);
+        }
+        .layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s ease;
+        }
+        .layer1 {
+            top: 0;
+            left: 0;
+            background: #9B4DFF;
+            opacity: 0.15;
+        }
+        .layer2 {
+            top: 0;
+            left: 0;
+            background: #f0f0f0;
+            opacity: 0.3;
+        }
+        .layer3 {
+            top: 0;
+            left: 0;
+            background: #9B4DFF;
+            opacity: 0.1;
+        }
+        .layer4 {
+            top: 0;
+            left: 0;
+            background: #ffffff;
+            opacity: 0.6;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 0 20px;
+        }
+        .hero-content h1 {
+            font-size: 4.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            max-width: 720px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn {
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: var(--purple);
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background: #7a2bd6;
+            transform: translateY(-3px);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 3px solid #ffffff;
+        }
+        .btn-secondary:hover {
+            background: #ffffff;
+            color: var(--dark);
+        }
+        section {
+            padding: 80px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .plans-section {
+            background: #ffffff;
+        }
+        .plans-section h2 {
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--dark);
+        }
+        .plans-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .plan-card {
+            background: #ffffff;
+            border: 4px solid var(--purple);
+            border-radius: 0;
+            padding: 40px 30px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .plan-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(155, 77, 255, 0.15);
+        }
+        .plan-card.featured {
+            border-color: var(--purple);
+            box-shadow: 0 0 0 6px rgba(155, 77, 255, 0.1);
+        }
+        .plan-card.featured::before {
+            content: "推荐";
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--purple);
+            color: #ffffff;
+            padding: 6px 24px;
+            border-radius: 9999px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .plan-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+        .plan-price {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--purple);
+            margin-bottom: 20px;
+        }
+        .plan-price .annual {
+            font-size: 1.05rem;
+            color: #666;
+            margin-top: 8px;
+        }
+        .features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        .features li {
+            padding: 12px 0;
+            font-size: 1.05rem;
+            position: relative;
+            padding-left: 28px;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--purple);
+        }
+        .choose-btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--purple);
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .choose-btn:hover {
+            background: #7a2bd6;
+            transform: translateY(-2px);
+        }
+        .faq-section {
+            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+        }
+        .faq-section h2 {
+            font-size: 2.4rem;
+            margin-bottom: 50px;
+            text-align: center;
+            color: var(--dark);
+        }
+        details {
+            background: #ffffff;
+            margin-bottom: 18px;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        summary {
+            padding: 22px 28px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        summary:hover {
+            background: #f8f8f8;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary {
+            background: #f8f8f8;
+        }
+        details[open] p {
+            padding-top: 10px;
+        }
+        details p {
+            padding: 0 28px 28px 28px;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #777;
+            font-size: 0.95rem;
+        }
+        .mobile-menu {
+            display: none;
+        }
+    </style><div class="hamburger">☰ 菜单</div>
+    
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#hero">首页</a></li>
+            <li><a href="#plans">套餐选择</a></li>
+            <li><a href="#faq">常见问题</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="layer layer1"></div>
+            <div class="layer layer2"></div>
+            <div class="layer layer3"></div>
+            <div class="layer layer4"></div>
+            
+            <div class="hero-content">
+                <h1>泡芙云</h1>
+                <p>嗨朋友们！想让网络变得更安全、更自由吗？泡芙云就是为你准备的秘密武器，让你随时随地畅享无限可能。</p>
+                <div class="hero-buttons">
+                    <a href="#plans" class="btn btn-primary">立即选择套餐</a>
+                    <a href="#faq" class="btn btn-secondary">看看常见问题</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="plans" class="plans-section container">
+            <h2>选择适合你的流量套餐</h2>
+            <div class="plans-grid">
+                
+                <div class="plan-card">
+                    <h3>基础版</h3>
+                    <div class="plan-price">
+                        ¥15/月<br>
+                        <span class="annual">按年付仅需 ¥150/年</span>
+                    </div>
+                    <ul class="features">
+                        <li>每月 100GB 极速流量</li>
+                        <li>支持 3 台设备同时在线</li>
+                        <li>解锁基础流媒体</li>
+                        <li>普通线路节点池</li>
+                    </ul>
+                    <a href="#contact" class="choose-btn">选择基础版</a>
+                </div>
+
+                
+                <div class="plan-card featured">
+                    <h3>旗舰版</h3>
+                    <div class="plan-price">
+                        ¥35/月<br>
+                        <span class="annual">按年付仅需 ¥350/年</span>
+                    </div>
+                    <ul class="features">
+                        <li>每月 300GB 极速流量</li>
+                        <li>支持 5 台设备同时在线</li>
+                        <li>全节点原生流媒体解锁</li>
+                        <li>IPLC 专线游戏加速优化</li>
+                        <li>7x24 优先工单支持</li>
+                    </ul>
+                    <a href="#contact" class="choose-btn">选择旗舰版</a>
+                </div>
+
+                
+                <div class="plan-card">
+                    <h3>团队版</h3>
+                    <div class="plan-price">
+                        ¥85/月<br>
+                        <span class="annual">按年付仅需 ¥850/年</span>
+                    </div>
+                    <ul class="features">
+                        <li>每月 1000GB 极速流量</li>
+                        <li>支持 20 台设备同时在线</li>
+                        <li>VIP 专属高带宽节点</li>
+                        <li>支持企业定制路由</li>
+                        <li>专属客户经理服务</li>
+                    </ul>
+                    <a href="#contact" class="choose-btn">选择团队版</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section container">
+            <h2>常见问题</h2>
+            <details>
+                <summary>朋友们，泡芙云到底是什么服务？</summary>
+                <p>泡芙云是一款专注提供安全网络服务的平台，帮你轻松解锁流媒体并优化连接速度。无论在家还是出差，都能保持顺畅。</p>
+            </details>
+            <details>
+                <summary>流量额度够不够用？</summary>
+                <p>基础版每月 100GB，旗舰版 300GB，团队版 1000GB。日常刷剧、追剧、在线办公完全够用啦！</p>
+            </details>
+            <details>
+                <summary>支持几台设备一起用？</summary>
+                <p>基础版支持 3 台，旗舰版 5 台，团队版 20 台。家庭多人使用完全没问题。</p>
+            </details>
+            <details>
+                <summary>怎么解锁流媒体平台？</summary>
+                <p>选择对应套餐，配置好节点就能原生解锁 Netflix、YouTube、B站 等热门平台。超级简单。</p>
+            </details>
+            <details>
+                <summary>售后服务靠谱吗？</summary>
+                <p>旗舰版和团队版提供 7x24 优先工单支持，团队版还有专属客户经理。朋友们遇到任何问题都能及时解决。</p>
+            </details>
+        </section>
+
+        <footer>
+            <p>© 泡芙云 2024 • 安全自由 尽在掌握</p>
+        </footer>
+    </main>
+
+    <script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
